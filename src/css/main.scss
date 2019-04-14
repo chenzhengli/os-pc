@@ -1,0 +1,22 @@
+.main-wrapper{
+    // position: relative;
+    .os-main-router{
+        margin-bottom: 96px;
+    }
+    .os-footer{
+        position: absolute;
+        bottom: 0px;
+        width:100%;
+        padding: 0 16px;
+        margin: 48px 0 24px;
+        text-align: center;
+        .link{
+            a{
+                margin-right: 40px;
+            }
+        }
+        .os-copyright{
+            margin-top:10px;
+        }
+    }
+}

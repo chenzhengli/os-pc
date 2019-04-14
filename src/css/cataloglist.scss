@@ -1,0 +1,40 @@
+.os-catalogList-wrapper{
+    // margin-bottom:96px;
+    .os-catalogList-header{
+        background: #fff;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 16px 32px 0;
+        box-sizing: border-box;
+        .os-breadcrumb{
+            margin-bottom: 16px;
+        }
+        .os-title{
+            text-align: left;
+            h1{
+                margin-bottom: 16px;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(0,0,0,.85);
+            }
+        }
+    }
+    .os-catalogList-table{
+        background: #fff;
+        margin: 24px 24px 0;
+        padding: 24px 32px;
+        .os-form-inline{
+            text-align: left;   
+        }
+        .add{
+            text-align: left;
+        }
+        .table{
+            margin-top: 16px;
+        }
+        .os-page{
+            text-align: left;
+            margin-top:10px;
+        }
+    }
+    
+}

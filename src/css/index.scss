@@ -1,0 +1,21 @@
+@import './config.scss';
+.container{
+   min-height:100vh;
+   .header-main{
+       background-color: #f0f2f5
+   }
+   .os-header{
+       height:64px!important;
+       padding:0px 12px 0px 0px;
+       background-color: #fff;
+       border-bottom: 1px solid $theme-color;
+   }
+   .os-main{
+       padding: 0px;
+       position: relative;
+   }
+    .left-wrapper{
+        min-height:100vh;
+        background-color: #002140;
+    }
+}

@@ -1,0 +1,108 @@
+@import "./config.scss";
+.os-foodlist-wrapper{
+    .os-foodlist-header{
+        background: #fff;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 16px 32px 0;
+        box-sizing: border-box;
+        .os-breadcrumb{
+            margin-bottom: 16px;
+        }
+        .os-title{
+            text-align: left;
+            h1{
+                margin-bottom: 16px;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(0,0,0,.85);
+            }
+        }
+    }
+    .os-foodcard-list{
+        margin: 24px 24px 0;
+        .os-foodcard-body{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap:wrap;
+            .card{
+                width:33.33%;
+                padding-right: 12px;
+                padding-left: 12px;
+                box-sizing: border-box;
+                margin-bottom: 12px;
+            }
+            .card:last-child{
+                // padding-right:0px;
+            }
+            .card-food{
+                .card-body{
+                    background-color: #fff;
+                    padding:24px;
+                    .card-logo{
+                        padding-right: 16px;
+                        float: left;
+                        img{
+                            width: 48px;
+                            height: 48px;
+                            border-radius: 48px;
+                        }
+                    }
+                    .card-title{ 
+                        float: left;
+                        width: calc(100% - 64px);
+                       h1{
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-bottom: 12px;
+                        text-align: left;
+                       }
+                       p{
+                        position: relative;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        text-align: left
+                       }
+                    }
+                }
+                .card-action{
+                    display: flex;
+                    justify-content: flex-start;
+                    border-top:1px solid #e8e8e8;
+                    background: #f7f9fa;
+                    li{
+                        flex:1;
+                        border-right: 1px solid #d9d9d9;
+                        margin: 12px 0;
+                    }
+                    li:last-child{
+                        border:none
+                    }
+                }
+                .card-body::after{
+                    content: "";
+                    width:0px;
+                    height:0px;
+                    display: block;
+                    clear: both;
+                }
+            }
+            .card-add{
+                .el-button{
+                    border:none;
+                    height: 188px;
+                    width:100%;
+                    border:1px dashed #d9d9d9;
+                    // border-color: #d9d9d9;
+                    border-radius: 2px;
+                }
+                .el-button:hover{
+                    background-color:#fff;
+                    border:1px dashed $theme-color;
+                }
+            }
+        }
+    }
+}
